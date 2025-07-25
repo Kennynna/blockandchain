@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Container from './Container';
 import { Logo } from '../assets/icons/logo';

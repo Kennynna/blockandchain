@@ -29,7 +29,17 @@ body {
   --text-kumb: "Kumbh Sans", sans-serif;
 
   --text-size-18-to-14: clamp(0.875rem, 0.125rem + 0.83vw, 1.125rem);
-  --text-size-20-to-14: clamp(0.875rem, 0.779rem + 0.39vw, 1.25rem)
+  --text-size-20-to-14: clamp(0.875rem, 0.779rem + 0.39vw, 1.25rem);
+  --icon-size-24-to-20: clamp(1.25rem, 1.144rem + 0.4vw, 1.5rem);
+}
+
+.icon-24-20 {
+  width: var(--icon-size-24-to-20);
+  height: var(--icon-size-24-to-20);
+}
+
+.text-18-14 {
+  font-size: var(--text-size-18-to-14);
 }
 
 .title {
@@ -131,14 +141,36 @@ body {
   background-color: var(--border-gray);
 }
 
+/* TODO:  */
+
 .hero-flex-block {
-  padding-block: clamp(1.25rem, 0.772rem + 1.96vw, 3.125rem);
   display: grid;
   /* 3 колонки одинаковой ширины */
-  grid-template-columns: repeat(3, 420px);
+  grid-template-columns: 1fr 10px 1fr 10px 1fr;
   /* 2 ряда одинаковой высоты */
   grid-template-rows: repeat(2, 1fr);
-  justify-content: space-between;
+  border-top: 1px solid var(--border-gray);
+}
+
+.left-grid {
+  margin-left: 30px;
+}
+
+.top-grid {
+  margin-top: 50px;
+}
+
+.hero-feature-card {}
+
+.line {
+  width: 1px;
+  height: 100%;
+  background: var(--border-gray);
+  place-items: center;
+}
+
+.horizontal-line {
+  background-color: var(--border-gray);
 }
 
 .hero-title-block {
@@ -211,13 +243,15 @@ body {
 
 /* BlockAndChain Features */
 .features-section {
-  border-block: 1px solid var(--border-gray);
+  border-top: 1px solid var(--border-gray);
 }
 
 .section-title {
+
   padding-block: clamp(2.5rem, 1.225rem + 5.23vw, 7.5rem);
 
-  span {
+  p {
+    display: inline-block;
     color: var(--text-white);
     font-size: var(--text-size-20-to-14);
     font-weight: 500;
@@ -225,6 +259,9 @@ body {
     padding: 10px 6px;
     border-radius: 4px;
     background: #333;
+    line-height: 150%;
+    /* 21px */
+    letter-spacing: -0.42px;
   }
 
   h1 {
@@ -240,6 +277,7 @@ body {
 
 .features-main {
   background-color: var(--bg-black);
+  border-block: 1px solid var(--border-gray);
 }
 
 .features-block {
@@ -339,5 +377,226 @@ body {
   .features-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+
+/* technology section */
+
+.technology-main {
+  background-color: var(--bg-black);
+  border-top: 1px solid var(--border-gray);
+}
+
+.technology-title {}
+
+.technology-cards {
+  padding-block: clamp(2.5rem, 1.779rem + 2.68vw, 5rem);
+  gap: clamp(2.5rem, 1.279rem + 3.1vw, 5rem);
+}
+
+.technology-cards-second-raw {
+  padding-block: clamp(2.5rem, 1.779rem + 2.68vw, 5rem);
+  gap: clamp(2.5rem, 1.279rem + 3.1vw, 5rem);
+}
+
+.technology-card {
+  gap: clamp(1.25rem, 1.07rem + 0.67vw, 1.875rem);
+
+  img {
+    border-radius: 12px;
+    height: clamp(10.313rem, 6.986rem + 12.38vw, 18.125rem);
+    object-fit: cover;
+  }
+
+  h3 {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  p {
+    color: #98989A;
+    font-size: var(--text-size-18-to-14);
+    font-weight: 400;
+  }
+
+  button {
+    cursor: pointer;
+    padding: clamp(0.75rem, 0.642rem + 0.4vw, 1.125rem) 24px;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background: #1A1A1A;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #98989A;
+    font-size: var(--text-size-18-to-14);
+    font-weight: 400;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+  }
+
+  button:hover {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1), 0 2px 6px rgba(255, 255, 255, 0.05);
+    transform: translateY(-2px);
+  }
+}
+
+.arrow-icon {
+  height: clamp(1.25rem, 1.178rem + 0.27vw, 1.5rem);
+  width: clamp(1.25rem, 1.178rem + 0.27vw, 1.5rem);
+}
+
+.technology-cards-main {
+  gap: clamp(1.25rem, 1.07rem + 0.67vw, 1.875rem);
+
+  img {
+    border-radius: 12px;
+    height: clamp(10.313rem, -15.966rem + 28.41vw, 18.125rem);
+    object-fit: cover;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  p {
+    color: #98989A;
+    font-size: var(--text-size-18-to-14);
+    font-weight: 400;
+  }
+
+  button {
+    cursor: pointer;
+    padding: clamp(0.75rem, 0.642rem + 0.4vw, 1.125rem) 24px;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background: #1A1A1A;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #98989A;
+    font-size: var(--text-size-18-to-14);
+    font-weight: 400;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+  }
+
+  button:hover {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1), 0 2px 6px rgba(255, 255, 255, 0.05);
+    transform: translateY(-2px);
+  }
+}
+
+.technology-cards-main-block {
+  padding-block: clamp(2.5rem, 1.779rem + 2.68vw, 5rem);
+}
+
+@media (max-width:630px) {
+
+  .technology-cards,
+  .technology-cards-second-raw {
+    flex-direction: column;
+  }
+
+  .technology-cards-second-raw {
+    padding-top: 0px;
+  }
+
+  .technology-cards-main-block {
+    padding-top: 0px;
+  }
+
+  .technology-card {
+    border-bottom: 1px solid var(--border-gray);
+    padding-bottom: 40px;
+
+    button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .border-technology {
+    display: none;
+  }
+
+}
+
+.technology-last-card {
+  border: none;
+}
+
+.border-technology {
+  height: 1px;
+  width: 100%;
+  background-color: var(--border-gray);
+}
+
+.footer {
+  background-color: var(--bg-black);
+}
+
+.footer-block {
+  padding-block: clamp(1.563rem, 1.163rem + 1.49vw, 2.5rem);
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  justify-content: space-between;
+}
+
+.footer-link {
+  /* или block, в зависимости от нужного поведения */
+  height: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+}
+
+.footer-link::after {
+  content: '';
+  display: inline-block;
+  /* Делаем псевдоэлемент блочным для корректной высоты */
+  height: 100%;
+  /* Наследует высоту родителя */
+  top: 0;
+  width: 2px;
+  /* Ширина "палки" */
+  background-color: var(--border-gray);
+  /* Позиционируем относительно .footer-link */
+  margin-left: 11px;
+  /* Пример: палка справа */
+}
+
+.footer-link:hover {
+  color: var(--text-white);
+  transition: 0.2s;
+}
+
+.small {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.footer-text {
+  font-size: var(--text-size-18-to-14);
+  color: #666;
+  font-weight: 400;
+}
+
+@media (max-width: 715px) {
+  .footer-block {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .small {
+    text-align: center;
   }
 }

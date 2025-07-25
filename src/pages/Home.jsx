@@ -4,8 +4,8 @@ import { Technology } from '../components/Technology';
 
 export default function Home() {
   return <>
-    <Hero/>
-    {/* <BlockAndChainFeatures/>
-    <Technology/> */}
+    {/* <Hero/> */}
+    <BlockAndChainFeatures/>
+    <Technology/>
   </>;
 }
