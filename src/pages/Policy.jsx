@@ -28,7 +28,7 @@ export default function Policy() {
           <h3>5. Data Security</h3>
           <p>  We implement technical and organizational measures to safeguard your data.</p>
           <h3>6. Your Rights</h3>
-          <p>  You may request access, correction, or deletion of your personal data by contacting info@insolvent.capital.</p>
+          <p>  You may request access, correction, or deletion of your personal data by contacting info@blockandchain.xyz.</p>
           <h3>7. Changes to this Policy</h3>
           <p>  We may update this Privacy Policy occasionally. We will notify users via the website if significant changes are made.</p>
         </div>
