@@ -22,7 +22,7 @@ export function Hero() {
                     <div className='hero-flex-block relative container hero-flex-block-top '>
                         <div className="absolute bg-red-100 top-[170px] horizontal-line h-[0.5px] w-full " />
                         <article className="hero-feature-card top-grid">
-                            <p className="hero-flex-block-statistic">30<span className="plus text-[#FFD11A]">+</span> </p>
+                            <p className="hero-flex-block-statistic">3<span className="plus text-[#FFD11A]">+</span> </p>
                             <p className="hero-flex-block__desc">Satisfied clients</p>
                         </article>
                         <div className="hero-feature-card flex items-center w-full justify-center ">
@@ -31,7 +31,7 @@ export function Hero() {
                             </div>
                         </div>
                         <article className="hero-feature-card top-grid left-grid">
-                            <p className="hero-flex-block-statistic">100k<span className="plus text-[#FFD11A]">+</span>  </p>
+                            <p className="hero-flex-block-statistic">19k<span className="plus text-[#FFD11A]">+</span>  </p>
                             <p className="hero-flex-block__desc"> Users of our solutions</p>
                         </article>
                         <div className="hero-feature-card flex items-center w-full justify-center ">
@@ -40,7 +40,7 @@ export function Hero() {
                             </div>
                         </div>
                         <article className="hero-feature-card top-grid left-grid">
-                            <p className="hero-flex-block-statistic">5<span className="plus text-[#FFD11A]">+</span>  </p>
+                            <p className="hero-flex-block-statistic">2<span className="plus text-[#FFD11A]">+</span>  </p>
                             <p className="hero-flex-block__desc">Tech Experts</p>
                         </article>
 
