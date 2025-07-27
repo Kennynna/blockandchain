@@ -2,10 +2,10 @@ import IconWrapper from './IconWrapper';
 
 export const FlexibilityIcon = ({ className }) => {
   return (
-    <IconWrapper className={className}>
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-        <path d="M4 4H20C28.8366 4 36 11.1634 36 20H20C11.1634 20 4 12.8366 4 4Z" fill="#FFD11A" />
-        <path d="M4 20H20C28.8366 20 36 27.1634 36 36H20C11.1634 36 4 28.8366 4 20Z" fill="#404040" />
+    <IconWrapper className='icon-50-30'>
+      <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="none">
+        <path d="M5.66675 5H25.6667C36.7124 5 45.6667 13.9543 45.6667 25H25.6667C14.6211 25 5.66675 16.0457 5.66675 5Z" fill="#FFD11A" />
+        <path d="M5.66675 25H25.6667C36.7124 25 45.6667 33.9543 45.6667 45H25.6667C14.6211 45 5.66675 36.0457 5.66675 25Z" fill="#404040" />
       </svg>
     </IconWrapper>
   );

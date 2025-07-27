@@ -22,18 +22,21 @@ export const LangChange = () => {
   return (
     <div className="relative z-50">
       <div
-        className="flex items-center gap-4 cursor-pointer hover:opacity-60 p-2 rounded transition-all 0.3s"
+        className="flex items-center gap-2 cursor-pointer hover:opacity-60 p-2 rounded transition-all 0.3s"
         onClick={handleToggle}
       >
         <WorldIcon className="icon-24-20" />
         <p className="text-18-14 uppercase">{lang}</p>
       </div>
       {isOpen && (
-        <div className="absolute bottom-full mb-2 w-20 bg-[var(--bg-black)] border border-[var(--border-gray)] rounded shadow-lg z-10">
+        <div
+          className={`absolute bottom-full mb-2 w-20 bg-[var(--bg-black)] border border-[var(--border-gray)]  shadow-lg z-10 
+      animate-fade-in-up`}
+        >
           {LANGUAGES.map(({ code, label }) => (
             <div
               key={code}
-              className={`px-4 py-2 text-18-14 cursor-pointer transition-all 0.3s hover:bg-gray-100 hover:text-black ${lang === code ? "bg-white font-semibold text-black" : ""
+              className={`px-4 py-2 text-18-14 cursor-pointer transition-all duration-300 hover:bg-gray-100 hover:text-black ${lang === code ? "bg-white font-semibold text-black" : ""
                 }`}
               onClick={() => handleSelect(code)}
             >

@@ -12,10 +12,13 @@ export const Technology = () => {
 
   return (
     <section className="technology-title">
-      <FadeInWhenVisible delay={0.1}>
-        <Title title='Next-level Technology Consulting' desc={`Unlock efficiency, innovation, and security with BlockAndChain' s expert services in technology consulting `} />
+      <div className="bg-[var(--bg-gray)]">
 
-      </FadeInWhenVisible>
+        <FadeInWhenVisible delay={0.1}>
+          <Title title='Next-level Technology Consulting' desc={`Unlock efficiency, innovation, and security with BlockAndChain' s expert services in technology consulting `} />
+
+        </FadeInWhenVisible>
+      </div>
 
       <main className="technology-main">
         <Container>
@@ -24,7 +27,7 @@ export const Technology = () => {
 
             <div className="technology-cards flex justify-between items-center ">
               <article className="flex flex-col justify-between technology-card">
-                <img src="/img/1.png" alt="technology" />
+                <img src="/img/1.webp" alt="technology" />
                 <h3>Business Analysis</h3>
                 <p>Ensure the development of a robust software solution that aligns with your company’s goals, maximizes efficiency and optimizes return on investment.​That aligns with your company’s goals, maximizes efficiency with your company’</p>
                 <NavLink to="/contacts" className='contact--us__link mt-auto flex justify-end w-full'>
@@ -38,7 +41,7 @@ export const Technology = () => {
 
               </article>
               <article className="flex flex-col justify-between technology-card">
-                <img src="/img/2.png" alt="technology" />
+                <img src="/img/2.webp" alt="technology" />
                 <h3>Cyber Security</h3>
                 <p>Prioritize security as a core element of your business agenda, safeguarding data, intellectual property, and infrastructure from deliberate attacks and vulnerabilities. Element of your business agenda, safeguarding data, intellectual property.</p>
                 <NavLink to="/contacts" className='contact--us__link mt-auto flex justify-end w-full'>
@@ -62,7 +65,7 @@ export const Technology = () => {
 
             <div className="technology-cards-second-raw flex justify-between items-center ">
               <article className="flex flex-col justify-between technology-card">
-                <img src="/img/3.png" alt="technology" />
+                <img src="/img/3.webp" alt="technology" />
                 <h3>UI/UX Design</h3>
                 <p>Be empowered to modernize legacy systems, launch cutting-edge products, and create user-centric experiences for your stakeholders. </p>
                 <NavLink to="/contacts" className='contact--us__link mt-auto flex justify-end w-full'>
@@ -73,7 +76,7 @@ export const Technology = () => {
                   </button>
                 </NavLink>            </article>
               <article className="flex flex-col justify-between technology-card">
-                <img src="/img/4.png" alt="technology" />
+                <img src="/img/4.webp" alt="technology" />
                 <h3>Technology Advisory</h3>
                 <p>Leverage industry specialization and technical experience to reach the optimal technology approach to driving innovation and achieving strategic goals. </p>
                 <NavLink to="/contacts" className='contact--us__link mt-auto flex justify-end w-full'>
@@ -96,7 +99,7 @@ export const Technology = () => {
 
             <div className="technology-cards-main flex justify-between items-center ">
               <article className="flex flex-col justify-between technology-card technology-last-card">
-                <img src="/img/5.png" alt="technology" />
+                <img src="/img/5.webp" alt="technology" />
                 <h3>Business Analysis</h3>
                 <p>Receive expert advice and guidance on designing, planning, and implementing effective technology solutions.’</p>
                 <NavLink to="/contacts" className='contact--us__link'>

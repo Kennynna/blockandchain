@@ -7,18 +7,20 @@ import { FadeInWhenVisible } from './FadeInWhenVisible';
 export const BlockAndChainFeatures = () => {
   return (
     <section className="features-title">
-      <FadeInWhenVisible delay={0.1}>
+      <div className="bg-[var(--bg-gray)]">
+        <FadeInWhenVisible delay={0.1}>
 
-        <Title title='BlockAndChain Features' desc='Unlock the Power of' />
-      </FadeInWhenVisible>
+          <Title title='BlockAndChain Features' desc='Unlock the Power of' />
+        </FadeInWhenVisible>
+      </div>
 
-        <FadeInWhenVisible>
-      <main className="features-main">
+      <FadeInWhenVisible>
+        <main className="features-main">
           <Container className='features-block flex items-center justify-between relative'>
             <div className="h-full w-[1px]  absolute  top-0 features-vertical-line" />
 
             <div className="flex-1 features-block-left min-w-[413px]">
-              <SoftIcon />
+              <SoftIcon className='icon-80-50' />
               <h2>End-to-end Software Development Services</h2>
             </div>
 
@@ -42,8 +44,8 @@ export const BlockAndChainFeatures = () => {
             </div>
           </Container>
 
-      </main>
-        </FadeInWhenVisible>
+        </main>
+      </FadeInWhenVisible>
     </section>
 
   )

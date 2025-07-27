@@ -19,7 +19,7 @@ export function Hero() {
 
                 <FadeInWhenVisible delay={0.1}>
 
-                    <div className='hero-flex-block relative container '>
+                    <div className='hero-flex-block relative container hero-flex-block-top '>
                         <div className="absolute bg-red-100 top-[170px] horizontal-line h-[0.5px] w-full " />
                         <article className="hero-feature-card top-grid">
                             <p className="hero-flex-block-statistic">30<span className="plus text-[#FFD11A]">+</span> </p>
@@ -49,7 +49,7 @@ export function Hero() {
 
 
                         <article className="hero-feature-card bottom-cards">
-                            <Kickoff />
+                            <Kickoff className='icon-50-30' />
                             <p className="feature-card__title">Kickoff in 2 Weeks</p>
                             <p className="feature-card__desc">Blazingly fast team assembly and project start, scaling teams 50% faster than the industry average</p>
                         </article >
@@ -59,13 +59,18 @@ export function Hero() {
                             </div>
                         </div>
                         <article className="hero-feature-card left-grid bottom-cards">
-                            <PricingIcon />
+                            <PricingIcon className='icon-50-30' />
                             <p className="feature-card__title">Transparent Pricing</p>
                             <p className="feature-card__desc">All-inclusive costs and a dedicated Engineering Manager free of charge</p>
                         </article >
+                        <div className="hero-feature-card flex items-center w-full justify-center ">
+                            <div className="line ">
+
+                            </div>
+                        </div>
 
                         <article className="hero-feature-card left-grid bottom-cards">
-                            <FlexibilityIcon />
+                            <FlexibilityIcon className='icon-50-30' />
                             <p className="feature-card__title">Team Flexibility</p>
                             <p className="feature-card__desc">From a single consultant to augment your team to a fully managed cross-functional software development team</p>
                         </article>
@@ -75,20 +80,20 @@ export function Hero() {
 
                 </FadeInWhenVisible>
                 <div className="flex flex-col gap-4 mobile-bottom">
-                    <article className="hero-feature-card left-grid mt-13 border-b border-[var(--border-gray)]">
-                        <Kickoff />
+                    <article className="hero-feature-card left-grid  border-b border-[var(--border-gray)] bottom-grid">
+                        <Kickoff className='icon-50-30' />
                         <p className="feature-card__title">Kickoff in 2 Weeks</p>
                         <p className="feature-card__desc">Blazingly fast team assembly and project start, scaling teams 50% faster than the industry average</p>
                     </article >
 
-                    <article className="hero-feature-card left-grid  border-b border-[var(--border-gray)] ">
-                        <PricingIcon />
+                    <article className="hero-feature-card left-grid  border-b border-[var(--border-gray)] bottom-grid">
+                        <PricingIcon className='icon-50-30' />
                         <p className="feature-card__title">Transparent Pricing</p>
                         <p className="feature-card__desc">All-inclusive costs and a dedicated Engineering Manager free of charge</p>
                     </article >
 
-                    <article className="hero-feature-card left-grid  border-b border-[var(--border-gray)] ">
-                        <FlexibilityIcon />
+                    <article className="hero-feature-card left-grid  border-b border-[var(--border-gray)] bottom-grid">
+                        <FlexibilityIcon className='icon-50-30' />
                         <p className="feature-card__title">Team Flexibility</p>
                         <p className="feature-card__desc">From a single consultant to augment your team to a fully managed cross-functional software development team</p>
                     </article>
