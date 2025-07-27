@@ -1,6 +1,6 @@
 import IconWrapper from "./IconWrapper";
 
-export const BurgerMenu = () => {
+export const BurgerMenuIcon = () => {
   return (
     <IconWrapper className="burger-menu">
       <svg

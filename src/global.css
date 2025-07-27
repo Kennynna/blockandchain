@@ -129,6 +129,150 @@ body {
     display: block;
   }
 }
+/* ==== Основные стили навигации ==== */
+.nav-logo-block {
+  gap: clamp(0.5rem, 0.436rem + 0.26vw, 0.75rem);
+}
+
+.logo-text {
+  color: var(--text-white);
+  font-family: var(--text-kumb);
+  font-size: clamp(0.75rem, 0.654rem + 0.39vw, 1.125rem);
+  font-weight: 600;
+}
+
+.container {
+  padding-inline: clamp(1rem, -1.326rem + 9.54vw, 10.125rem);
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.nav-container {
+  background-color: #1a1a1a;
+  font-size: 18px;
+  padding-block: 24px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(1.5rem, -1.5rem + 3.33vw, 2.5rem);
+}
+
+.nav-links__item {
+  padding: 14px 24px;
+  color: #7e7e81;
+  font-size: var(--text-size-18-to-14);
+  font-weight: 400;
+}
+
+.nav-links__item:hover {
+  border-radius: 10px;
+  background: var(--bg-black);
+  transition: all 0.3s;
+}
+
+.nav-links__item-active {
+  border-radius: 10px;
+  border: 1px solid var(--border-gray);
+  background: var(--bg-black);
+  font-weight: 500;
+  color: var(--text-white);
+}
+
+.nav-links__item--contact {
+  padding: 14px 20px;
+  border-radius: 10px;
+  background: var(--bg-yellow);
+  color: var(--text-dark);
+  font-size: var(--text-size-18-to-14);
+  font-weight: 500;
+}
+
+.nav-links__item--contact:hover {
+  box-shadow: 0 0 8px rgba(255, 209, 26, 0.6),
+    0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+/* ==== Бургер-иконка ==== */
+.burger-menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+/* Скрываем десктопные блоки и включаем бургер при ≤1080px */
+@media (max-width: 1080px) {
+  .nav-block {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+}
+
+/* ==== Мобильное меню (фуллскрин, с анимацией) ==== */
+.mobile-nav-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* весь экран */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* по вертикали по центру */
+  align-items: center;
+  /* по горизонтали по центру */
+  gap: clamp(1rem, -0.5rem + 5vw, 1.5rem);
+  background-color: #1a1a1a;
+  padding: 0;
+  z-index: 9999;
+  transform: translateY(-100%);
+  /* из‑за экрана сверху */
+  opacity: 0;
+  transition: transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+
+/* Когда открыто — спускаем и делаем видимым */
+.mobile-nav-links.open {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Когда закрыто — снова прячем */
+.mobile-nav-links.closed {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.mobile-nav-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Стили самих ссылок внутри мобильного меню */
+.mobile-nav-links .nav-links__item,
+.mobile-nav-links .nav-links__item--contact {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 0;
+  /* без скруглений */
+}
 
 /* HERO SECTION */
 
