@@ -407,7 +407,7 @@ body {
 
   img {
     border-radius: 12px;
-    height: clamp(10.313rem, 6.986rem + 12.38vw, 18.125rem);
+    height: clamp(10.313rem, 7.096rem + 12.25vw, 18.125rem);
     object-fit: cover;
   }
 
@@ -454,7 +454,7 @@ body {
 
   img {
     border-radius: 12px;
-    height: clamp(10.313rem, -15.966rem + 28.41vw, 18.125rem);
+    height: clamp(10.313rem, 7.096rem + 12.25vw, 18.125rem);
     object-fit: cover;
     width: 100%;
   }
@@ -540,7 +540,11 @@ body {
 }
 
 .technology-last-card {
+  width: 100%;
   border: none;
+  img{
+    width: 100%;
+  }
 }
 
 .border-technology {
@@ -548,6 +552,19 @@ body {
   width: 100%;
   background-color: var(--border-gray);
 }
+
+.legal-notice{
+  display: flex;
+  flex-direction: column;
+  margin-top: clamp(4.5rem, 3.265rem + 4.71vw, 7.5rem);
+  padding-bottom: 40px;
+  color:  #666;
+    font-family: "Kumbh Sans";
+    font-size: clamp(1rem, 0.897rem + 0.39vw, 1.25rem);
+    font-weight: 400;
+    line-height: 24px;
+}
+/* Footer */
 
 .footer {
   background-color: var(--bg-black);
@@ -675,7 +692,18 @@ body {
     font-weight: 400;
   }
 }
-
+.contacts-info-footer{
+  color: #666;
+    font-family: "Kumbh Sans";
+    font-size: clamp(1rem, 0.897rem + 0.39vw, 1.25rem);
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+.section-contacts{
+  background-color: var(--bg-black);
+}
 @media (max-width: 660px) {
   .contact-title {
     flex-direction: column;

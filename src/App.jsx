@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 import Nav from './components/Nav';
 import { Home, Policy, Contacts, Conditions } from './pages';
 import { Footer } from './components/Footer';
+import { Cookie } from './components/Cookie';
+import { LanguageProvider } from "./context/LanguageContext";
 
 function Layout() {
   return (
@@ -11,13 +13,16 @@ function Layout() {
         <Outlet />
       </div>
       <Footer />
+      <Cookie/>
     </div>
   )
 }
 
 function App() {
   return (
-    <BrowserRouter>
+    <LanguageProvider>
+
+          <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -35,6 +40,8 @@ function App() {
         <Route path="*" element={<div>Page not found</div>} />
       </Routes>
     </BrowserRouter>
+    </LanguageProvider>
+
   );
 }
 

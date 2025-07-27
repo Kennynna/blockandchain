@@ -2,8 +2,13 @@ import { NavLink } from "react-router-dom"
 import { ArrowIcon } from "../assets/icons/Arrow"
 import Container from "./Container"
 import { Title } from "./ui/Title"
+import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../config/lang";
 
 export const Technology = () => {
+  const { lang } = useLanguage();
+  const disclaimer = translations[lang]?.home?.disclaimer || translations.en.home.disclaimer;
+
   return (
     <section className="technology-title">
       <Title title='Next-level Technology Consulting' desc={`Unlock efficiency, innovation, and security with BlockAndChain' s expert services in technology consulting `} />
@@ -58,7 +63,7 @@ export const Technology = () => {
                 </button>
               </NavLink>            </article>
             <article className="flex flex-col justify-between technology-card">
-              <img src="/public/img/1.jpg" alt="" />
+              <img src="/public/img/4.jpg" alt="" />
               <h3>Technology Advisory</h3>
               <p>Leverage industry specialization and technical experience to reach the optimal technology approach to driving innovation and achieving strategic goals. </p>
               <NavLink to="/contacts" className='contact--us__link'>
@@ -77,9 +82,9 @@ export const Technology = () => {
 
           <div className="technology-cards-main flex justify-between items-center ">
             <article className="flex flex-col justify-between technology-card technology-last-card">
-              <img src="/public/img/4.jpg" alt="" />
+              <img src="/public/img/5.png" alt="" />
               <h3>Business Analysis</h3>
-              <p>Ensure the development of a robust software solution that aligns with your company’s goals, maximizes efficiency and optimizes return on investment.​That aligns with your company’s goals, maximizes efficiency with your company’</p>
+              <p>Receive expert advice and guidance on designing, planning, and implementing effective technology solutions.’</p>
               <NavLink to="/contacts" className='contact--us__link'>
 
                 <button>
@@ -89,6 +94,13 @@ export const Technology = () => {
               </NavLink>
             </article>
           </div>
+
+          <p className="legal-notice">
+            {disclaimer.map((text, i) => (
+              <span key={i}>{text}</span>
+            ))}
+          </p>
+
 
         </Container>
       </main>
