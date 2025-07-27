@@ -12,7 +12,7 @@ export const Technology = () => {
 
   return (
     <section className="technology-title">
-      <FadeInWhenVisible delay={0.4}>
+      <FadeInWhenVisible delay={0.1}>
         <Title title='Next-level Technology Consulting' desc={`Unlock efficiency, innovation, and security with BlockAndChain' s expert services in technology consulting `} />
 
       </FadeInWhenVisible>
@@ -20,7 +20,7 @@ export const Technology = () => {
       <main className="technology-main">
         <Container>
 
-          <FadeInWhenVisible delay={0.4}>
+          <FadeInWhenVisible delay={0.1}>
 
             <div className="technology-cards flex justify-between items-center ">
               <article className="flex flex-col justify-between technology-card">
@@ -58,7 +58,7 @@ export const Technology = () => {
         <div className="border-technology" />
 
         <Container>
-          <FadeInWhenVisible delay={0.4}>
+          <FadeInWhenVisible delay={0.1}>
 
             <div className="technology-cards-second-raw flex justify-between items-center ">
               <article className="flex flex-col justify-between technology-card">
@@ -92,7 +92,7 @@ export const Technology = () => {
         </Container>
         <div className="border-technology" />
         <Container className='technology-cards-main-block'>
-          <FadeInWhenVisible delay={0.4}>
+          <FadeInWhenVisible delay={0.1}>
 
             <div className="technology-cards-main flex justify-between items-center ">
               <article className="flex flex-col justify-between technology-card technology-last-card">

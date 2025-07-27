@@ -7,7 +7,7 @@ import { FadeInWhenVisible } from './FadeInWhenVisible';
 export const BlockAndChainFeatures = () => {
   return (
     <section className="features-title">
-      <FadeInWhenVisible delay={0.4}>
+      <FadeInWhenVisible delay={0.1}>
 
         <Title title='BlockAndChain Features' desc='Unlock the Power of' />
       </FadeInWhenVisible>

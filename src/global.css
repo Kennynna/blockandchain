@@ -523,9 +523,20 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
-
-
+.mobile-bottom{
+  display: none;
+}
+@media (max-width: 768px) {
+  .bottom-cards{
+    display: none;
+  }
+  .hero-flex-block{
+    grid-template-rows: none;
+  }
+  .mobile-bottom{
+    display: block;
+  }
+}
 
 /* technology section */
 
