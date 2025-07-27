@@ -21,7 +21,7 @@ export const Technology = () => {
               <img src="/img/1.jpg" alt="" />
               <h3>Business Analysis</h3>
               <p>Ensure the development of a robust software solution that aligns with your company’s goals, maximizes efficiency and optimizes return on investment.​That aligns with your company’s goals, maximizes efficiency with your company’</p>
-              <NavLink to="/contacts" className='contact--us__link'>
+              <NavLink to="/contacts" className='contact--us__link mt-auto flex justify-end w-full'>
 
                 <button>
                   Contact Us
@@ -35,7 +35,7 @@ export const Technology = () => {
               <img src="/img/2.jpg" alt="" />
               <h3>Cyber Security</h3>
               <p>Prioritize security as a core element of your business agenda, safeguarding data, intellectual property, and infrastructure from deliberate attacks and vulnerabilities. Element of your business agenda, safeguarding data, intellectual property.</p>
-              <NavLink to="/contacts" className='contact--us__link'>
+              <NavLink to="/contacts" className='contact--us__link mt-auto flex justify-end w-full'>
 
                 <button>
                   Contact Us
@@ -55,7 +55,7 @@ export const Technology = () => {
               <img src="/img/3.jpg" alt="" />
               <h3>UI/UX Design</h3>
               <p>Be empowered to modernize legacy systems, launch cutting-edge products, and create user-centric experiences for your stakeholders. </p>
-              <NavLink to="/contacts" className='contact--us__link'>
+              <NavLink to="/contacts" className='contact--us__link mt-auto flex justify-end w-full'>
 
                 <button>
                   Contact Us
@@ -66,7 +66,7 @@ export const Technology = () => {
               <img src="/img/4.jpg" alt="" />
               <h3>Technology Advisory</h3>
               <p>Leverage industry specialization and technical experience to reach the optimal technology approach to driving innovation and achieving strategic goals. </p>
-              <NavLink to="/contacts" className='contact--us__link'>
+              <NavLink to="/contacts" className='contact--us__link mt-auto flex justify-end w-full'>
 
                 <button>
                   Contact Us
