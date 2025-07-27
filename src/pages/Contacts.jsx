@@ -21,7 +21,7 @@ export default function Contacts() {
           </div>
 
           <div className="contact-img">
-            <img src="/public/img/services-card.png" alt="" width={400} height={360} />
+            <img src="/img/services-card.png" alt="" width={400} height={360} />
           </div>
 
           <div className="email-block flex items-center gap-6 mt-6">
