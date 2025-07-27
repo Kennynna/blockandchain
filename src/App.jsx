@@ -5,14 +5,14 @@ import { Footer } from './components/Footer';
 
 function Layout() {
   return (
-    <>
+    <div className='flex flex-col min-h-screen'>
       <Nav />
-      <div>
+      <div className='flex-1 bg-[var(--bg-black)]'>
         <Outlet />
       </div>
       <Footer />
-    </>
-  );
+    </div>
+  )
 }
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
         <Route path="/contacts">
           <Route index element={<Contacts />} />
         </Route>
-        <Route path="/conditions" element={<Layout />}>
+        <Route path="/conditions" >
           <Route index element={<Conditions />} />
         </Route>
         {/* можно добавить 404: */}

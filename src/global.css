@@ -470,6 +470,12 @@ body {
     font-weight: 400;
   }
 
+  .contact--us__link {
+    align-self: end;
+    display: flex;
+    align-items: center;
+  }
+
   button {
     cursor: pointer;
     padding: clamp(0.75rem, 0.642rem + 0.4vw, 1.125rem) 24px;
@@ -514,6 +520,12 @@ body {
   .technology-card {
     border-bottom: 1px solid var(--border-gray);
     padding-bottom: 40px;
+
+  }
+
+  .contact--us__link {
+    display: block;
+    width: 100%;
 
     button {
       width: 100%;
@@ -599,4 +611,288 @@ body {
   .small {
     text-align: center;
   }
+}
+
+.contact-title {
+  margin-top: clamp(2.375rem, -20.5rem + 25.42vw, 10rem);
+
+  h1 {
+    color: #FFF;
+    font-family: var(--text-kumb);
+    font-size: clamp(3rem, 2.72rem + 1.07vw, 4rem);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  p {
+    color: #666;
+    font-family: var(--text-kumb);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 360px;
+  }
+}
+
+.contact-img {
+  margin-top: clamp(4.375rem, 3.85rem + 2vw, 6.25rem);
+
+  img {
+    height: 360px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    border: 0.852px solid, #E0E0E0;
+
+  }
+}
+
+.contacts-icons {
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid #DCDCDC;
+}
+
+.contacts-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px 24px;
+
+  p {
+    margin-top: 10px;
+    color: #FFF;
+    font-family: "Kumbh Sans";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  h4 {
+    color: #A3A3A3;
+    font-family: "Kumbh Sans";
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 660px) {
+  .contact-title {
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+  }
+
+  .email-block {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* Подключите Kumbh Sans в <head>:
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&display=swap" rel="stylesheet" />
+*/
+
+/* Подключите в <head> вашего HTML:
+   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&display=swap" rel="stylesheet" />
+*/
+
+
+
+/* Общий контейнер */
+.policy--block {
+  padding-top: clamp(1.25rem, 0.2rem + 4vw, 5rem);
+  background-color: var(--bg-black);
+
+}
+
+.policy__title {
+  font-size: clamp(1.5rem, 1.088rem + 1.57vw, 2.5rem);
+  color: #FFF;
+  font-family: "Kumbh Sans";
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.6px;
+}
+
+.policy__date {
+  font-size: clamp(0.75rem, 0.647rem + 0.39vw, 1rem);
+  color: rgba(255, 255, 255, 0.60);
+
+  font-weight: 400;
+  line-height: 140%;
+  /* 16.8px */
+  letter-spacing: -0.072px;
+}
+
+.policy--info {
+  margin-top: clamp(1.5rem, 1.088rem + 1.57vw, 2.5rem);
+
+  h3 {
+    font-size: clamp(1.25rem, 1.147rem + 0.39vw, 1.5rem);
+    font-family: "Kumbh Sans";
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.144px;
+          /* 33.6px */
+  }
+
+  span {
+    font-size: clamp(1.25rem, 1.147rem + 0.39vw, 1.5rem);
+    color: rgba(255, 255, 255, 0.60);
+    font-family: "Kumbh Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.096px;
+
+  }
+}
+
+.policy--list{
+  h3 {
+      font-size: clamp(1.25rem, 1.147rem + 0.39vw, 1.5rem);
+      font-family: "Kumbh Sans";
+      font-weight: 500;
+      line-height: 140%;
+      letter-spacing: -0.144px;
+      /* 33.6px */
+    }
+  
+    p {
+      font-size: clamp(1.25rem, 1.147rem + 0.39vw, 1.5rem);
+      color: rgba(255, 255, 255, 0.60);
+      font-family: "Kumbh Sans";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: -0.096px;
+  
+    }
+}
+
+/* Если понадобится автоматическая нумерация без «1.» в заголовках,
+   можно добавить в .policy__section-title:
+.policy__section-title::before {
+  content: counter(section) ". ";
+}
+   и в .policy__sections ol:
+   counter-reset: section;
+*/
+
+
+/* Terms & Conditions */
+.conditions-section {
+  background-color: var(--bg-black);
+  flex: 1;
+}
+
+.terms--block {
+  margin-top: clamp(1.5rem, 1.088rem + 1.57vw, 2.5rem);
+}
+
+.conditions-title {
+  padding-top: clamp(2.5rem, 1.471rem + 3.92vw, 5rem);
+
+  h1 {
+    color: #FFF;
+    font-family: "Kumbh Sans";
+    font-size: clamp(1.5rem, 1.088rem + 1.57vw, 2.5rem);
+    font-weight: 500;
+    letter-spacing: -0.6px;
+  }
+
+  p {
+    font-size: clamp(0.75rem, 0.647rem + 0.39vw, 1rem);
+    color: rgba(255, 255, 255, 0.60);
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.072px;
+  }
+}
+
+.terms__title {
+  /* ваш заголовок — здесь list-style:none ни к чему */
+  font-size: clamp(1.25rem, 1.147rem + 0.39vw, 1.5rem);
+  color: #FFF;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.6px;
+  margin-bottom: 1rem;
+}
+
+.terms__list {
+  /* включаем классическую нумерацию с цифрами снаружи */
+  list-style-type: decimal;
+  list-style-position: outside;
+  /* отступ слева для всей колонки списка */
+  margin-left: 1.5rem;
+  padding-left: 0;
+
+  li {
+    /* текст сам по себе */
+    color: rgba(255, 255, 255, 0.60);
+    font-family: "Kumbh Sans";
+    font-size: clamp(0.75rem, 0.647rem + 0.39vw, 1rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.072px;
+  }
+
+}
+
+.conditions {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Cookie */
+
+.cookie-block {
+  border: 1px solid var(--border-gray);
+  position: fixed;
+  padding: clamp(1rem, 0.382rem + 2.35vw, 2.5rem);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-black);
+  height: max-content;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cookie-block__title {
+  color: var(--text-white);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.66px;
+}
+
+.cookie-block__text {
+  color: #98989A;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.54px;
+}
+
+.cookie-block__btn {
+  margin-top: 24px;
+  border-radius: 10px;
+  padding: 14px 20px;
+  background-color: var(--bg-yellow);
+  cursor: pointer;
+  width: max-content;
+  align-self: end;
+  color: var(--text-dark);
+  font-size: 18px;
+  font-weight: 500;
 }
