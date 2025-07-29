@@ -25,7 +25,7 @@ export const translations = {
     btnContact: 'Contact Us',
     hero: {
       slogan: "Solving your problems starts here",
-      title: "BlockAndChain innovative blockAndChainFeatures company",
+      title: "BlockAndChain innovative technology company",
       desc: "We develop our own products and offer services to businesses, providing efficient solutions tailored to their needs.",
       stats: {
         clients_desc: "Satisfied clients",
