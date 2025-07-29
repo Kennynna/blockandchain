@@ -1,8 +1,11 @@
 import Container from "./Container"
 import { NavLink } from 'react-router-dom';
 import { LangChange } from "./ui/LangChange";
-
+import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../config/lang";
 export const Footer = () => {
+    const { lang } = useLanguage();
+    const t = translations[lang].footer;
   return (
     <footer className="footer">
       <Container className=' footer-block'>
@@ -12,14 +15,15 @@ export const Footer = () => {
             end
             className='footer-link  footer-text'
           >
-            Terms & Conditions
+            {t.terms}
           </NavLink>
           <NavLink
             to="/policy"
             end
             className='footer-link footer-text'
           >
-            Privacy Policy
+            {t.privacy}
+
           </NavLink>
           <LangChange />
         </div>

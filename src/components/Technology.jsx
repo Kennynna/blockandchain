@@ -9,13 +9,14 @@ import { FadeInWhenVisible } from './FadeInWhenVisible';
 export const Technology = () => {
   const { lang } = useLanguage();
   const disclaimer = translations[lang]?.home?.disclaimer || translations.en.home.disclaimer;
+  const t = translations[lang].technology
 
   return (
     <section className="technology-title">
       <div className="bg-[var(--bg-gray)]">
 
         <FadeInWhenVisible delay={0.1}>
-          <Title title='Next-level Technology Consulting' desc={`Unlock efficiency, innovation, and security with BlockAndChain' s expert services in technology consulting `} />
+          <Title title={t.title} desc={t.desc} />
 
         </FadeInWhenVisible>
       </div>
@@ -28,12 +29,12 @@ export const Technology = () => {
             <div className="technology-cards flex justify-between items-center ">
               <article className="flex flex-col justify-between technology-card">
                 <img src="/img/1.webp" alt="technology" />
-                <h3>Business Analysis</h3>
-                <p>Ensure the development of a robust software solution that aligns with your company’s goals, maximizes efficiency and optimizes return on investment.​That aligns with your company’s goals, maximizes efficiency with your company’</p>
+                <h3>{t.cards[0].title}</h3>
+                <p>{t.cards[0].desc}</p>
                 <NavLink to="/contacts" className='contact--us__link mt-auto flex justify-end w-full'>
 
                   <button>
-                    Contact Us
+                    {translations[lang].btnContact}
                     <ArrowIcon className='arrow-icon' />
                   </button>
                 </NavLink>
@@ -42,12 +43,12 @@ export const Technology = () => {
               </article>
               <article className="flex flex-col justify-between technology-card">
                 <img src="/img/2.webp" alt="technology" />
-                <h3>Cyber Security</h3>
-                <p>Prioritize security as a core element of your business agenda, safeguarding data, intellectual property, and infrastructure from deliberate attacks and vulnerabilities. Element of your business agenda, safeguarding data, intellectual property.</p>
+                <h3>{t.cards[1].title}</h3>
+                <p>{t.cards[1].desc}</p>
                 <NavLink to="/contacts" className='contact--us__link mt-auto flex justify-end w-full'>
 
                   <button>
-                    Contact Us
+                    {translations[lang].btnContact}
                     <ArrowIcon className='arrow-icon' />
                   </button>
                 </NavLink>
@@ -66,23 +67,23 @@ export const Technology = () => {
             <div className="technology-cards-second-raw flex justify-between items-center ">
               <article className="flex flex-col justify-between technology-card">
                 <img src="/img/3.webp" alt="technology" />
-                <h3>UI/UX Design</h3>
-                <p>Be empowered to modernize legacy systems, launch cutting-edge products, and create user-centric experiences for your stakeholders. </p>
+                <h3>{t.cards[2].title}</h3>
+                <p>{t.cards[2].desc}</p>
                 <NavLink to="/contacts" className='contact--us__link mt-auto flex justify-end w-full'>
 
                   <button>
-                    Contact Us
+                    {translations[lang].btnContact}
                     <ArrowIcon className='arrow-icon' />
                   </button>
                 </NavLink>            </article>
               <article className="flex flex-col justify-between technology-card">
                 <img src="/img/4.webp" alt="technology" />
-                <h3>Technology Advisory</h3>
-                <p>Leverage industry specialization and technical experience to reach the optimal technology approach to driving innovation and achieving strategic goals. </p>
+                <h3>{t.cards[3].title}</h3>
+                <p>{t.cards[3].desc}</p>
                 <NavLink to="/contacts" className='contact--us__link mt-auto flex justify-end w-full'>
 
                   <button>
-                    Contact Us
+                    {translations[lang].btnContact}
                     <ArrowIcon className='arrow-icon' />
                   </button>
                 </NavLink>
@@ -100,12 +101,12 @@ export const Technology = () => {
             <div className="technology-cards-main flex justify-between items-center ">
               <article className="flex flex-col justify-between technology-card technology-last-card">
                 <img src="/img/5.webp" alt="technology" />
-                <h3>Business Analysis</h3>
-                <p>Receive expert advice and guidance on designing, planning, and implementing effective technology solutions.’</p>
+                <h3>{t.cards[4].title}</h3>
+                <p>{t.cards[4].desc}</p>
                 <NavLink to="/contacts" className='contact--us__link'>
 
                   <button>
-                    Contact Us
+                    {translations[lang].btnContact}
                     <ArrowIcon className='arrow-icon' />
                   </button>
                 </NavLink>

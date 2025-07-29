@@ -3,10 +3,13 @@ import { NavLink } from 'react-router-dom';
 import Container from './Container';
 import { Logo } from '../assets/icons/logo';
 import { BurgerMenuIcon } from '../assets/icons/BurgerMenu';
+import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../config/lang";
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const { lang } = useLanguage();
+  const t = translations[lang].navigate;
   function handleToggleMenu() {
     setMenuOpen(!menuOpen);
   }
@@ -34,7 +37,7 @@ function Nav() {
               `nav-links__item ${isActive ? 'nav-links__item-active' : ''}`
             }
           >
-            Home
+            {t.home}
           </NavLink>
           <NavLink
             to="/conditions"
@@ -42,7 +45,7 @@ function Nav() {
               `nav-links__item ${isActive ? 'nav-links__item-active' : ''}`
             }
           >
-            Terms &amp; Conditions
+            {t.terms}
           </NavLink>
           <NavLink
             to="/policy"
@@ -50,7 +53,7 @@ function Nav() {
               `nav-links__item ${isActive ? 'nav-links__item-active' : ''}`
             }
           >
-            Privacy Policy
+            {t.private}
           </NavLink>
         </div>
 
@@ -62,7 +65,7 @@ function Nav() {
               `nav-links__item--contact ${isActive ? 'active' : ''}`
             }
           >
-            Contact Us
+            {translations[lang].btnContact}
           </NavLink>
         </div>
 
@@ -95,7 +98,8 @@ function Nav() {
             `nav-links__item ${isActive ? 'nav-links__item-active' : ''}`
           }
         >
-          Home
+          {t.home}
+
         </NavLink>
         <NavLink
           to="/conditions"
@@ -104,7 +108,8 @@ function Nav() {
             `nav-links__item ${isActive ? 'nav-links__item-active' : ''}`
           }
         >
-          Terms &amp; Conditions
+          {t.terms}
+
         </NavLink>
         <NavLink
           to="/policy"
@@ -113,14 +118,15 @@ function Nav() {
             `nav-links__item ${isActive ? 'nav-links__item-active' : ''}`
           }
         >
-          Privacy Policy
+          {t.private}
         </NavLink>
         <NavLink
           to="/contacts"
           onClick={handleCloseMenu}
           className="nav-links__item--contact"
         >
-          Contact Us
+          {translations[lang].btnContact}
+
         </NavLink>
       </div>
     </nav>
