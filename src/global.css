@@ -542,6 +542,8 @@ body {
 }
 
 @media (max-width: 768px) {
+
+
   .horizontal-line {
     display: none;
   }
@@ -1198,5 +1200,11 @@ body {
     h2 {
       max-width: 350px;
     }
+  }
+}
+
+@media (max-width:760px) {
+  .left-grid {
+    margin-right: 15px !important;
   }
 }
